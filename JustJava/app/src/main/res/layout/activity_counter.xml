@@ -11,6 +11,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:inputType="textCapWords"
+            android:hint="Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whipped cream"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            tools:ignore="OnClick" />
+
+        <CheckBox
+            android:id="@+id/checkChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:paddingLeft="24dp"
+            android:textSize="16sp"
+            tools:ignore="OnClick" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,23 +83,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price"
-            android:textAllCaps="true"
-            android:textSize="16sp"
-            android:padding="8dp" />
-
-        <TextView
-            android:id="@+id/price_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$0"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:padding="8dp" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,9 +91,6 @@
             android:layout_marginLeft="16dp"
             android:onClick="submitOrder" />
 
-
     </LinearLayout>
-
-
 
 </android.support.constraint.ConstraintLayout>
